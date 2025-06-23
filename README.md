@@ -29,6 +29,7 @@ The problem involves transporting cows with different weights using the fewest n
 
 - The **Greedy Algorithm** was significantly faster.
 - The **Brute Force Algorithm** found a better (optimal) solution.
+- *Caveat*: The runtime above is based on my first run. The code has been ran more than once, and the runtime will vary.
 
 ---
 
