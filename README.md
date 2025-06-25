@@ -1,5 +1,5 @@
-# 🚀 Cow Transport Algorithms: Greedy vs Brute Force (MIT 6.0002)
-
+# Greedy vs Brute Force vs Dynamic Programming (MIT 6.0002)
+## 🚀 Part A: Cow Transport Algorithms: Greedy vs Brute Force
 This project implements and compares Greedy and Brute Force algorithmic strategies to solve the classic **Cow Transport Problem** from MIT 6.0002: *Introduction to Computational Thinking and Data Science*.
 
 The problem involves transporting cows with different weights using the fewest number of trips without exceeding a set weight limit (10 units per trip).
@@ -61,10 +61,20 @@ This function powers the brute-force solution by generating **all unique partiti
 
 ---
 
-## 🔮 Future Additions
+## 🔄 Part B – Dynamic Programming Approach
 
-**Part B – Dynamic Programming Approach**  
-Coming soon: An optimized algorithm that balances performance and optimality using dynamic programming.
+This section explores how dynamic programming compares to greedy and brute-force strategies for solving the minimum egg problem (similar to the unbounded knapsack problem).
+
+I implemented a **bottom-up dynamic programming solution** to find the minimum number of eggs needed to reach a target weight using unlimited quantities of the given egg weights.
+
+### Highlights:
+- Used a 1D memoization table:  
+  `dp[w] = min(dp[w - e] + 1 for e in egg_weights if e <= w)`
+- Avoids redundant computation by storing subproblem results
+- Guarantees an optimal solution, unlike greedy
+- Scales efficiently where brute force fails
+
+This addition builds on Part A by showing how dynamic programming balances optimality and performance in ways that greedy or brute force alone cannot.
 
 ---
 
